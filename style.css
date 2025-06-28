@@ -1,0 +1,166 @@
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background:linear-gradient(to right,rgb(6, 181, 239),blue);
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    .logoContainer img {
+      height: 50px;
+      width: auto;
+      border-radius: 20px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li {
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 8px 12px;
+      transition: background 0.3s, color 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover {
+      background-color: white;
+      color: black;
+      border-radius: 5px;
+    }
+    .button{
+   display:none;
+      margin-right:30px ;
+   text-align: end;
+      font-size: 40px;
+      background-color: none;
+      
+    }
+#button{
+ 
+  font-size:30px;
+  position: relative;
+
+}
+.image img{
+  display: grid;
+  height:400px;
+   padding:20px ;
+   padding-right: 10px;
+   margin: 20px;
+  width:450px;
+   background-color: rgb(255,255,255,0.5);
+   border-radius: 10px;
+   backdrop-filter: blur(10px);
+   animation: scale 2s ease-in-out;
+}
+   @keyframes scale  {
+    0%{
+      transform: scale(0.1);
+    }
+    100%{
+      transfrom: scale(1,1);
+    }
+   }
+
+.image {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+
+}
+
+div img:hover{
+     transition: opacity 4s;
+  opacity: 0.9;
+}
+footer{ background-color: black;
+  text-align: center;
+    color:white;
+  
+}
+footer ul{
+  margin-top: 20px;
+  display:flex;
+  justify-content: center;
+  gap:30px;
+}
+footer ul li{
+  padding: 15px;
+  font-size: 30px;
+  list-style:none ;
+}
+footer ul li:hover{
+  background-color: aqua;
+  border-radius: 20px;
+   filter: drop-shadow(2px 2px 7px red);
+}
+
+footer ul li a{
+  text-decoration: none;
+  list-style: none;
+    color: aliceblue;font-weight: bold;
+   
+}
+
+  
+  @media  screen  and  (max-width:768px) {
+nav ul li a {
+  color: black;
+}
+
+    header {
+    background-color: transparent;
+     flex-direction: column;
+     justify-self: end;
+    }
+   
+    nav ul{
+      padding-top:10px;
+      flex-direction: column;
+      justify-items: end;
+      
+    }
+    nav{
+      display: none;
+      
+    }
+    .button{
+      display: block;
+      cursor: pointer;
+    }
+     .logoContainer img{
+      height: 50px;
+      width: auto;
+      border-radius: 20px;
+    }
+.image img{
+  width:400px;
+  height:300px
+}
+    .image{
+       grid-template-columns: repeat(1,1fr);
+    }
+footer ul li{
+  font-size: 10px;
+}
+  }
